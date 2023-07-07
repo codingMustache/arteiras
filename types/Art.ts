@@ -13,6 +13,7 @@ export type Artists = {
 export type Art = {
   _id: string;
   _createdAt: Date;
+  name: String;
   month: Date;
   slug: string;
   featured_artists: Artists;

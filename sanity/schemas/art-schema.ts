@@ -10,7 +10,7 @@ const art = {
     },
     {
       name: "month",
-      title: "Month",
+      title: "Month \(Format: MM-YYYY\)",
       type: "date",
       options: {
         dateFormat: "MM-YYYY",
@@ -18,7 +18,7 @@ const art = {
     },
     {
       name: "slug",
-      title: "Slug",
+      title: "Click 'Generate' after entering 'Month' above",
       type: "slug",
       options: {
         source: "month",
@@ -28,12 +28,12 @@ const art = {
     },
     {
       name: "featured_artists",
-      title: "featured_artists",
+      title: "Featured Artists",
       type: "object",
       fields: [
         {
           name: "content",
-          title: "Content",
+          title: "Add the artists below",
           type: "array",
           of: [{
             type: "document",
@@ -42,7 +42,7 @@ const art = {
               { name: "images", title: "Images", type: "array", of: [{ type: "image" }] },
               { name: "caption", title: "Caption", type: "string"},
               { name: "description", title: "Description", type: "string"},
-              { name: "artist_url", title: "Artist_Url", type: "string" },
+              { name: "artist_url", title: "Artist Url", type: "string" },
             ]
           }],
         }

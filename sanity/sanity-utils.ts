@@ -24,7 +24,7 @@ export const getArt = async (): Promise<Art> => {
 };
 
 /**
- * 
+ *
  * @param slug :string
  * @returns Promise
  */
